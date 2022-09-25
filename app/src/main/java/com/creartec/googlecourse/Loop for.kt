@@ -21,6 +21,10 @@ fun main(){
     for (item in 10 downTo 0 step 2){
         print("$item,")
     }
+    println()
+    for (item in 0..100 step 10){
+        print("$item,")
+    }
 
 
 }
