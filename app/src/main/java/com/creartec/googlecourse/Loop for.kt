@@ -21,5 +21,6 @@ fun main(){
     for (item in 10 downTo 0 step 2){
         print("$item,")
     }
+    //probamos los cambios en git
 
 }
