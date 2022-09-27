@@ -71,3 +71,34 @@ fun main() {
 
 
 }
+/*8. Resumen
+Kotlin brinda funcionalidades que te ayudan a administrar y manipular colecciones de datos
+con mayor facilidad mediante la biblioteca estándar de Kotlin. Se puede definir una colección
+como una cantidad de objetos del mismo tipo de datos. Existen diferentes tipos de colecciones básicas en
+Kotlin: listas, conjuntos y mapas. En particular, este codelab se enfocó en listas. Obtendrás más información sobre conjuntos
+y mapas en codelabs futuros.
+
+Una lista es una colección ordenada de elementos de un tipo específico, como una lista de Strings.
+El índice es la posición de número entero que refleja la posición del elemento (p. ej., myList[2]).
+En una lista, el primer elemento está en el índice 0 (p. ej., myList[0]) y el último elemento es myList.size-1 (p. ej., myList[myList.size-1]
+o myList.last()).
+Existen dos tipos de listas: List y MutableList.
+Una List es de solo lectura y no se puede modificar una vez inicializada. Sin embargo, puedes aplicar operaciones
+como sorted() y reversed(), que muestran una lista nueva sin cambiar la original.
+Una MutableList se puede modificar después de su creación, por ejemplo, agregando, quitando o modificando elementos.
+Puedes agregar una lista de elementos a una lista mutable con addAll().
+Usa un bucle while para ejecutar un bloque de código hasta que la expresión resulte falsa y salgas del bucle.
+while (expression) {
+
+// While the expression is true, execute this code block
+
+}
+
+Usa un bucle for para iterar a través de todos los elementos de una lista:
+for (item in myList) {
+
+// Execute this code block for each element of the list
+
+}
+
+El modificador vararg te permite pasar una cantidad variable de argumentos a una función o constructor*/
