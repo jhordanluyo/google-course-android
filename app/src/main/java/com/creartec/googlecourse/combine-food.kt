@@ -20,11 +20,13 @@ class Vegetables(vararg val toppings:String,) : Item("Vegetables", 5){
 }
 class order(val orderNumber:Int){
     private val itemList = mutableListOf<Item>()
-    fun addItem(newItem:Item){
+    fun addItem(newItem:Item):order{
         itemList.add(newItem)
+        return this
     }
-    fun addAll(newItems:List<Item>){
+    fun addAll(newItems:List<Item>):order{
         itemList.addAll(newItems)
+        return this
     }
     fun print(){
         println("order ${orderNumber}")
@@ -52,6 +54,15 @@ fun main() {
     val items = listOf(Noodles(), Vegetables("Carrots", "Beans", "Celery"))
     order3.addAll(items)
     orderList.add(order3)
+
+    val order4 = order(4).addItem(Noodles()).addItem(Vegetables("Cabbage", "Onion"))
+    orderList.add(order4)
+
+    orderList.add(
+        order(5)
+            .addItem(Noodles())
+            .addItem(Noodles())
+            .addItem(Vegetables("Spinach")))
 
     for (order in orderList){
         order.print()
