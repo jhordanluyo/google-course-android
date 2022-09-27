@@ -37,22 +37,26 @@ class order(val orderNumber:Int){
     }
 }
 fun main() {
+    val orderList= mutableListOf<order>()
     val order1 = order(1)
     order1.addItem(Noodles())
-    order1.print()
-
-    println()
+    orderList.add(order1)
 
     val order2 = order(2)
     order2.addItem(Noodles())
     order2.addItem(Vegetables())
-    order2.print()
+    orderList.add(order2)
 
-    println()
 
     val order3 = order(3)
     val items = listOf(Noodles(), Vegetables("Carrots", "Beans", "Celery"))
     order3.addAll(items)
-    order3.print()
+    orderList.add(order3)
+
+    for (order in orderList){
+        order.print()
+        println()
+    }
+
 
 }
